@@ -1,0 +1,6 @@
+framework module Pods_lewis {
+  umbrella header "Pods-lewis-umbrella.h"
+
+  export *
+  module * { export * }
+}

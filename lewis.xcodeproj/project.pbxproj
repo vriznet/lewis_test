@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E8C1B35C3DF85F1FE71F8EC /* Pods_lewis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DA8A49536CC2FF92BAC3D2 /* Pods_lewis.framework */; };
 		9BF4CFCF213101B60009528D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4CFCE213101B60009528D /* AppDelegate.swift */; };
-		9BF4CFD1213101B60009528D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4CFD0213101B60009528D /* ViewController.swift */; };
+		9BF4CFD1213101B60009528D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4CFD0213101B60009528D /* SignInVC.swift */; };
 		9BF4CFD4213101B60009528D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4CFD2213101B60009528D /* Main.storyboard */; };
 		9BF4CFD6213101B70009528D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4CFD5213101B70009528D /* Assets.xcassets */; };
 		9BF4CFD9213101B70009528D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4CFD7213101B70009528D /* LaunchScreen.storyboard */; };
+		9BF4CFE1213103CF0009528D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4CFE0213103CF0009528D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BC2C9FA167AFBEA803BAE70 /* Pods-lewis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lewis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lewis/Pods-lewis.debug.xcconfig"; sourceTree = "<group>"; };
+		7124D5C3FF7528F43AB97F0C /* Pods-lewis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lewis.release.xcconfig"; path = "Pods/Target Support Files/Pods-lewis/Pods-lewis.release.xcconfig"; sourceTree = "<group>"; };
 		9BF4CFCB213101B60009528D /* lewis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lewis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF4CFCE213101B60009528D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BF4CFD0213101B60009528D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BF4CFD0213101B60009528D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		9BF4CFD3213101B60009528D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BF4CFD5213101B70009528D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BF4CFD8213101B70009528D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BF4CFDA213101B70009528D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF4CFE0213103CF0009528D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C3DA8A49536CC2FF92BAC3D2 /* Pods_lewis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lewis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8C1B35C3DF85F1FE71F8EC /* Pods_lewis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D4939EF3C7C4EA5BB8C8665 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3DA8A49536CC2FF92BAC3D2 /* Pods_lewis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F0FE4B7A3FB78ACF339BD53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BC2C9FA167AFBEA803BAE70 /* Pods-lewis.debug.xcconfig */,
+				7124D5C3FF7528F43AB97F0C /* Pods-lewis.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9BF4CFC2213101B60009528D = {
 			isa = PBXGroup;
 			children = (
 				9BF4CFCD213101B60009528D /* lewis */,
 				9BF4CFCC213101B60009528D /* Products */,
+				8F0FE4B7A3FB78ACF339BD53 /* Pods */,
+				2D4939EF3C7C4EA5BB8C8665 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,39 @@
 		9BF4CFCD213101B60009528D /* lewis */ = {
 			isa = PBXGroup;
 			children = (
+				9BF4CFE4213105280009528D /* Model */,
+				9BF4CFE3213105240009528D /* View */,
+				9BF4CFE22131051F0009528D /* Controller */,
 				9BF4CFCE213101B60009528D /* AppDelegate.swift */,
-				9BF4CFD0213101B60009528D /* ViewController.swift */,
 				9BF4CFD2213101B60009528D /* Main.storyboard */,
 				9BF4CFD5213101B70009528D /* Assets.xcassets */,
 				9BF4CFD7213101B70009528D /* LaunchScreen.storyboard */,
 				9BF4CFDA213101B70009528D /* Info.plist */,
+				9BF4CFE0213103CF0009528D /* GoogleService-Info.plist */,
 			);
 			path = lewis;
+			sourceTree = "<group>";
+		};
+		9BF4CFE22131051F0009528D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BF4CFD0213101B60009528D /* SignInVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9BF4CFE3213105240009528D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BF4CFE4213105280009528D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BF4CFDD213101B70009528D /* Build configuration list for PBXNativeTarget "lewis" */;
 			buildPhases = (
+				65BCC44494C1D21310EFB18C /* [CP] Check Pods Manifest.lock */,
 				9BF4CFC7213101B60009528D /* Sources */,
 				9BF4CFC8213101B60009528D /* Frameworks */,
 				9BF4CFC9213101B60009528D /* Resources */,
+				C9C1C8ECC9FE4C727930913B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BF4CFD9213101B70009528D /* LaunchScreen.storyboard in Resources */,
+				9BF4CFE1213103CF0009528D /* GoogleService-Info.plist in Resources */,
 				9BF4CFD6213101B70009528D /* Assets.xcassets in Resources */,
 				9BF4CFD4213101B60009528D /* Main.storyboard in Resources */,
 			);
@@ -130,12 +184,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65BCC44494C1D21310EFB18C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lewis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9C1C8ECC9FE4C727930913B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-lewis/Pods-lewis-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lewis/Pods-lewis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BF4CFC7213101B60009528D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BF4CFD1213101B60009528D /* ViewController.swift in Sources */,
+				9BF4CFD1213101B60009528D /* SignInVC.swift in Sources */,
 				9BF4CFCF213101B60009528D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +377,7 @@
 		};
 		9BF4CFDE213101B70009528D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BC2C9FA167AFBEA803BAE70 /* Pods-lewis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +396,7 @@
 		};
 		9BF4CFDF213101B70009528D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7124D5C3FF7528F43AB97F0C /* Pods-lewis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
